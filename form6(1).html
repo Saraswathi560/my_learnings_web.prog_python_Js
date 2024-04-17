@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating a simple form</title>
+</head>
+<body>
+<form>
+	<div>
+		<input type="text" placeholder="Enter the name:" name="name">
+		<input type="password" placeholder="Enter the password: " name="password"> <! --<a When we give the type as password it doesnot shows the password to the enduser. It is represented by dots. -->
+	</div>
+	<div>
+		Favourite Color:
+		<! --<a Input as radio button format is shown below -->
+		<input type="radio" name="Red" value="Red">Red
+		<input type="radio" name="Green" value="Green">Green
+		<input type="radio" name="Pink" value="Pink">Pink
+		<input type="radio" name="White-Blue" value="White-Blue">White-Blue
+	</div>
+	<div>
+		<! --<a When we to create a list we make use of list attribute in the input field and to get the list elements we use datalist tag in html -->
+		<input name="contients" list="contients" placeholder="contients">
+		<datalist id="contients">
+			<option value="Asia"></option>
+			<option value="Africa"></option>
+			<option value="North America"></option>
+			<option value="South America"></option>
+			<option value="Antractica"></option>
+			<option value="Europe"></option>
+			<option value="Austraila"></option>
+		</datalist>
+	</div>
+</form>
+</body>
+</html>
+<! -- a is used because the decoration purpose only not to consider as  tag -->
