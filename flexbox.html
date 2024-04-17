@@ -1,0 +1,39 @@
+<! --<a Flexbox: If we have multiple elements that display on the same webpage, then we make use of Flexbox. If we have a six boxes on a web page in a row on our computer and same web page is opened on the mobile device then the 3 boxes are visible but the other 3 are other side which is not able see by user. Inorder to do so we need remove the white spaces and divides into 2 rows for this example. So we make use of flexbox. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox in HTML</title>
+	<style type="text/css">
+		#container{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#container > div{
+			background-color: springgreen;
+			margin: 20px;
+			padding: 20px;
+			font-size: 20px;
+			width: 200px;
+		}
+	</style>
+	<! --<a flex-wrap is used because if the text is not adjusted to web page of a device then wrap the text to a next line instead.>
+</head>
+<body>
+<div id="container">
+	<! --<a We are creating the container because everything inside the container I would like to add the flexbox,to able to wrap it. -->
+<div>1.This is a sample text inside the div and demo for the flexbox.</div>
+<div>2.This is a sample text inside the div and demo for the flexbox.</div>
+<div>3.This is a sample text inside the div and demo for the flexbox.</div>
+<div>4.This is a sample text inside the div and demo for the flexbox.</div>
+<div>5.This is a sample text inside the div and demo for the flexbox.</div>
+<div>6.This is a sample text inside the div and demo for the flexbox.</div>
+<div>7.This is a sample text inside the div and demo for the flexbox.</div>
+<div>8.This is a sample text inside the div and demo for the flexbox.</div>
+<div>9.This is a sample text inside the div and demo for the flexbox.</div>
+<div>10.This is a sample text inside the div and demo for the flexbox.</div>
+<div>11.This is a sample text inside the div and demo for the flexbox.</div>
+<div>12.This is a sample text inside the div and demo for the flexbox.</div>
+</div>
+</body>
+</html>
+<! --<a Output: It shows the 12 flexboxes at a time on a computer.  It wraps the text according to the size of the page. hat is when we minimize the chrome it changes into 6 rows according to my system minimization. -->
